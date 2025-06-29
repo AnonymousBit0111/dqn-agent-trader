@@ -1,0 +1,17 @@
+[package]
+name = "dqn"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+polars = { version = "0.49.1", features = ["full"] }
+candle-core = { version = "0.9", features = [
+    
+] } # Candle Core (Tensor, Device, etc.)  [oai_citation:0‡Docs.rs](https://docs.rs/crate/candle-nn/latest?utm_source=chatgpt.com) [oai_citation:1‡Docs.rs](https://docs.rs/candle-optimisers?utm_source=chatgpt.com)
+
+candle-nn = { version = "0.9", features = [
+
+] } # Candle-nn (Linear, Module, VarBuilder, VarMap)  [oai_citation:2‡Docs.rs](https://docs.rs/crate/candle-nn/latest?utm_source=chatgpt.com) [oai_citation:3‡Docs.rs](https://docs.rs/candle-nn/latest/candle_nn/linear/fn.linear_b.html?utm_source=chatgpt.com)
+candle-optimisers = { version = "0.9" } # Candle-optimisers (Adam, ParamsAdam)  [oai_citation:4‡Docs.rs](https://docs.rs/candle-optimisers?utm_source=chatgpt.com) [oai_citation:5‡GitHub](https://github.com/KGrewal1/candle-optimisers?utm_source=chatgpt.com)
+once_cell = "1.21.3"
+rand = "0.9.1"
